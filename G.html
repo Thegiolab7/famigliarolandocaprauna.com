@@ -1,0 +1,328 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Restaurant Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+     <div class="flex space-x-7">
+      <div>
+       <a class="flex items-center py-4 px-2" href="#">
+        <img alt="Restaurant logo" class="h-8 w-8 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/ZnYJD20Vki5MARxZvVPenMKKFzYh83X1zZBV2pNUBqOTYs3JA.jpg" width="50"/>
+        <span class="font-semibold text-gray-500 text-lg">
+         Restaurant
+        </span>
+       </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-1">
+       <a class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold" href="#">
+        Home
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#menu">
+        Menu
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#gallery">
+        Gallery
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#about">
+        About
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#contact">
+        Contact
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#video">
+        Video
+       </a>
+      </div>
+     </div>
+     <div class="md:hidden flex items-center">
+      <button class="outline-none mobile-menu-button">
+       <i class="fas fa-bars">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="hidden mobile-menu">
+    <ul class="">
+     <li>
+      <a class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#menu">
+       Menu
+      </a>
+     </li>
+     <li>
+      <a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#gallery">
+       Gallery
+      </a>
+     </li>
+     <li>
+      <a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#contact">
+       Contact
+      </a>
+     </li>
+     <li>
+      <a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#video">
+       Video
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <div class="bg-cover bg-center h-screen" style="background-image: url('https://placehold.co/1920x1080');">
+   <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50">
+    <div class="text-center">
+     <h1 class="text-white text-5xl font-bold">
+      Welcome to Our Restaurant
+     </h1>
+     <p class="text-white text-xl mt-4">
+      Experience the best dining experience
+     </p>
+     <a class="mt-6 inline-block bg-green-500 text-white py-2 px-4 rounded-full text-lg" href="#menu">
+      Explore Menu
+     </a>
+    </div>
+   </div>
+  </div>
+  <!-- Menu Section -->
+  <section class="py-20 bg-white" id="menu">
+   <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800">
+     Our Menu
+    </h2>
+    <p class="text-center text-gray-600 mt-4">
+     Discover our delicious offerings
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <img alt="Delicious pasta dish" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/XPynMPzNP6qSBhoE97dgeaNNqoYyUPf9bBJ0Yx7uZ3GvwYvTA.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Pasta Primavera
+       </h3>
+       <p class="text-gray-600 mt-2">
+        A delightful mix of fresh vegetables and pasta.
+       </p>
+       <p class="text-green-500 mt-2">
+        $12.99
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <img alt="Juicy steak with sides" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/eRhTBkefNjP5KorOY7VGc9V7T1eHG8peOjO4LzFi6YFiEG7dC.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Grilled Steak
+       </h3>
+       <p class="text-gray-600 mt-2">
+        Perfectly grilled steak with a side of vegetables.
+       </p>
+       <p class="text-green-500 mt-2">
+        $19.99
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <img alt="Fresh garden salad" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/0h8NsNexasRfr0hcG6lJeEwFt2aurBVmROSNxmfN4YHkCj9OB.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Garden Salad
+       </h3>
+       <p class="text-gray-600 mt-2">
+        A fresh mix of greens and vegetables.
+       </p>
+       <p class="text-green-500 mt-2">
+        $8.99
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <img alt="Delicious pizza with toppings" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/KHjQy3kyNp7mGVvswJasd4pT188y7MypSl7sgp9fp6uOYs3JA.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Margherita Pizza
+       </h3>
+       <p class="text-gray-600 mt-2">
+        Classic pizza with fresh tomatoes and basil.
+       </p>
+       <p class="text-green-500 mt-2">
+        $10.99
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <img alt="Bowl of creamy soup" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/Ifc23hGQNn2WMiOc1Rf3laA7ljr74ifo1gT5mQ8mcBdWhxeOB.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Creamy Tomato Soup
+       </h3>
+       <p class="text-gray-600 mt-2">
+        Rich and creamy tomato soup with herbs.
+       </p>
+       <p class="text-green-500 mt-2">
+        $6.99
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+      <img alt="Plate of sushi rolls" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/N28rcigginL0KBVQ9JJwfna6Z6Tc8h5BJOxvfykwFSugwYvTA.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Sushi Platter
+       </h3>
+       <p class="text-gray-600 mt-2">
+        A variety of fresh sushi rolls.
+       </p>
+       <p class="text-green-500 mt-2">
+        $14.99
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Daily Specials Section -->
+  <section class="py-20 bg-gray-100" id="daily-specials">
+   <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800">
+     Daily Specials
+    </h2>
+    <p class="text-center text-gray-600 mt-4">
+     Enjoy our special dishes available only today
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Special dish of the day - Grilled Salmon" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/GrilledSalmon.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Grilled Salmon
+       </h3>
+       <p class="text-gray-600 mt-2">
+        Freshly grilled salmon with a side of asparagus.
+       </p>
+       <p class="text-green-500 mt-2">
+        $18.99
+       </p>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Special dish of the day - Beef Wellington" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/BeefWellington.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Beef Wellington
+       </h3>
+       <p class="text-gray-600 mt-2">
+        Tender beef wrapped in puff pastry, served with mashed potatoes.
+       </p>
+       <p class="text-green-500 mt-2">
+        $24.99
+       </p>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Special dish of the day - Lobster Bisque" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/LobsterBisque.jpg" width="300"/>
+      <div class="mt-4">
+       <h3 class="text-xl font-semibold">
+        Lobster Bisque
+       </h3>
+       <p class="text-gray-600 mt-2">
+        Creamy lobster bisque with a hint of sherry.
+       </p>
+       <p class="text-green-500 mt-2">
+        $14.99
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Gallery Section -->
+  <section class="py-20 bg-gray-100" id="gallery">
+   <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800">
+     Gallery
+    </h2>
+    <p class="text-center text-gray-600 mt-4">
+     A glimpse of our delightful dishes and ambiance
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Interior of the restaurant with elegant decor" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/UOl00a5mr7aILZYiJMeZNRiNJM5Q1peDGlaHTANWkfNPhxeOB.jpg" width="300"/>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Chef preparing a gourmet dish" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/XJ82XXQUyULICxlG9ZeUlAsWIYcCrkABdaWz2QFEXXoPYs3JA.jpg" width="300"/>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Beautifully plated dessert" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/ohd25uxLUtYQO543DOZlHfCgazWK59LSwKqC688Giu1YYs3JA.jpg" width="300"/>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Outdoor seating area with a view" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/78ak5auW5popPl35DRHW6TitFXzyKecr1ak3UyaIWhKWYs3JA.jpg" width="300"/>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Bartender making a cocktail" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/TTYiTtEUuKofSCk07bmJS5XXmEYzoEUXvwnuPuYlxdRXYs3JA.jpg" width="300"/>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="Group of friends enjoying a meal" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/XK1rdDKU4XL7PBgHi0xKpm9IaoPiW5GTjowi4hhHUcpIM27E.jpg" width="300"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-20 bg-white" id="about">
+   <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800">
+     About Us
+    </h2>
+    <p class="text-center text-gray-600 mt-4">
+     Learn more about our story and values
+    </p>
+    <div class="mt-10 flex flex-col md:flex-row items-center">
+     <div class="md:w-1/2">
+      <img alt="Restaurant founders" class="w-full h-auto rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/uC5VPFFRneTSJaNaIeYp3fLpIZG5BSyyC16ohf63uSRUCj9OB.jpg" width="500"/>
+     </div>
+     <div class="md:w-1/2 md:ml-10 mt-6 md:mt-0">
+      <h3 class="text-2xl font-semibold">
+       Our Story
+      </h3>
+      <p class="text-gray-600 mt-4">
+       Our restaurant was founded with the vision of creating a unique dining experience that combines delicious food with a warm and inviting atmosphere. We believe in using the freshest ingredients and traditional cooking methods to bring out the best flavors in every dish.
+      </p>
+      <h3 class="text-2xl font-semibold mt-6">
+       Our Values
+      </h3>
+      <p class="text-gray-600 mt-4">
+       We are committed to providing exceptional service and creating a memorable dining experience for every guest. Our values are rooted in quality, integrity, and a passion for culinary excellence.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Video Section -->
+  <section class="py-20 bg-gray-100" id="video">
+   <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800">
